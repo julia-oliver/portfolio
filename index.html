@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <!-- Decorative rings -->
+  <div class="float-ring ring-1"></div>
+  <div class="float-ring ring-2"></div>
+  <div class="float-ring ring-3"></div>
+
+  <!-- Decorative SVG lines -->
+  <svg class="deco-lines" viewBox="0 0 600 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M600 0 Q400 200 500 400 Q600 600 400 800" stroke="#370302" stroke-width="1" fill="none"/>
+    <path d="M550 0 Q350 200 450 400 Q550 600 350 800" stroke="#FDD2D4" stroke-width="0.8" fill="none"/>
+    <circle cx="480" cy="180" r="60" stroke="#370302" stroke-width="0.5"/>
+    <circle cx="520" cy="600" r="30" stroke="#F5B2C4" stroke-width="0.5"/>
+  </svg>
+
+  <!-- Dot pattern -->
+  <div class="dots-pattern">
+    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar">
+    <div class="tab-item tab-about" data-tooltip="Sobre mim">
+      <div class="tab-body">
+        <span class="tab-icon">✦</span>
+        <span class="tab-label">About Me</span>
+      </div>
+    </div>
+    <div class="tab-item tab-projects" data-tooltip="Meus projetos">
+      <div class="tab-body">
+        <span class="tab-icon">◈</span>
+        <span class="tab-label">Projects</span>
+      </div>
+    </div>
+    <div class="tab-item tab-socials" data-tooltip="Redes sociais">
+      <div class="tab-body">
+        <span class="tab-icon">◎</span>
+        <span class="tab-label">Socials</span>
+      </div>
+    </div>
+    <div class="tab-item tab-certs" data-tooltip="Certificações">
+      <div class="tab-body">
+        <span class="tab-icon">◇</span>
+        <span class="tab-label">Certs</span>
+      </div>
+    </div>
+    
+    <span class="sidebar-brand">Portfolio 2025</span>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="hero-content">
+      <p class="hero-eyebrow">✦ Bem-vindo(a) ao meu espaço</p>
+      <h1 class="hero-title">
+        Welcome<br>
+        <em>to my</em><br>
+        Portfolio.
+      </h1>
+      <p class="hero-subtitle">
+        Estudante em cibersegurança com o objetivo de proteger sistemas, explorar vulnerabilidades e construir ambientes digitais mais seguros.
+      </p>
+      <a href="#" class="hero-cta">
+        Ver projetos <span class="arrow">→</span>
+      </a>
+    </div>
+  </main>
+
+  <div class="deco-strip"></div>
+
+  <!-- OVERLAY PANELS -->
+
+  <!-- About Me -->
+  <div class="overlay" id="overlay-about">
+    <div class="overlay-card card-about">
+      <button class="overlay-close" onclick="closeOverlay()">✕</button>
+      <div class="overlay-eyebrow">✦ Quem sou eu</div>
+      <h2 class="overlay-title">About <em>Me</em></h2>
+      <div class="overlay-divider"></div>
+      <p class="overlay-text">
+        Especialista em cibersegurança com foco em segurança ofensiva e defensiva. Apaixonada por entender como sistemas falham — e como torná-los resilientes.
+      </p>
+      <p class="overlay-text" style="margin-top: 12px;">
+        Atualmente explorando pentesting, análise de malware e resposta a incidentes. Acredito que segurança começa com curiosidade e termina com rigor.
+      </p>
+      <div class="overlay-tags">
+        <span class="tag">Pentesting</span>
+        <span class="tag">CTF</span>
+        <span class="tag">Blue Team</span>
+        <span class="tag">OSINT</span>
+        <span class="tag">Python</span>
+        <span class="tag">Linux</span>
+        <span class="tag">Malware Analysis</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="overlay" id="overlay-projects">
+    <div class="overlay-card card-projects">
+      <button class="overlay-close" onclick="closeOverlay()">✕</button>
+      <div class="overlay-eyebrow" style="color: var(--soft-blush)">◈ O que construí</div>
+      <h2 class="overlay-title" style="color: var(--light-pink)">My <em>Projects</em></h2>
+      <div class="overlay-divider" style="background: var(--soft-blush)"></div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-icon">◈</span>
+            <span class="project-tag">HackTheBox · TryHackMe</span>
+          </div>
+          <h3 class="project-title">CTF Writeups</h3>
+          <p class="project-desc">Documentação de desafios resolvidos em plataformas de CTF, com análise de vulnerabilidades e metodologia de exploração.</p>
+        </div>
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-icon">◎</span>
+            <span class="project-tag">Reverse Engineering · 2024</span>
+          </div>
+          <h3 class="project-title">Análise de Malware</h3>
+          <p class="project-desc">Estudo e dissecção de amostras de malware em ambiente isolado, identificando comportamentos e indicadores de comprometimento.</p>
+        </div>
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-icon">✦</span>
+            <span class="project-tag">Python · Bash · 2025</span>
+          </div>
+          <h3 class="project-title">Scripts de Automação</h3>
+          <p class="project-desc">Ferramentas desenvolvidas para automatizar tarefas de reconhecimento, coleta de dados e análise em ambientes de segurança.</p>
+        </div>
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-icon">◇</span>
+            <span class="project-tag">Blue Team · 2025</span>
+          </div>
+          <h3 class="project-title">Monitoramento & SIEM</h3>
+          <p class="project-desc">Configuração e análise de regras de detecção em ambientes SIEM para identificação de ameaças e anomalias de rede.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Socials -->
+  <div class="overlay" id="overlay-socials">
+    <div class="overlay-card card-socials">
+      <button class="overlay-close" onclick="closeOverlay()">✕</button>
+      <div class="overlay-eyebrow">◎ Onde me encontrar</div>
+      <h2 class="overlay-title">Let's <em>Connect</em></h2>
+      <div class="overlay-divider"></div>
+      <p class="overlay-text">Aberta a conversas sobre cibersegurança, colaborações e oportunidades.</p>
+      <div class="socials-list">
+        <a href="#" class="social-row">
+          <div class="social-row-icon">in</div>
+          <div class="social-row-info">
+            <span class="social-row-name">LinkedIn</span>
+            <span class="social-row-handle">linkedin.com/in/seu-perfil</span>
+          </div>
+          <span class="social-row-arrow">→</span>
+        </a>
+        <a href="#" class="social-row">
+          <div class="social-row-icon">gh</div>
+          <div class="social-row-info">
+            <span class="social-row-name">GitHub</span>
+            <span class="social-row-handle">github.com/julia-oliver</span>
+          </div>
+          <span class="social-row-arrow">→</span>
+        </a>
+        <a href="#" class="social-row">
+          <div class="social-row-icon">@</div>
+          <div class="social-row-info">
+            <span class="social-row-name">Email</span>
+            <span class="social-row-handle">juliaoliver.fsa@email.com</span>
+          </div>
+          <span class="social-row-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certifications -->
+  <div class="overlay" id="overlay-certs">
+    <div class="overlay-card card-certs">
+      <button class="overlay-close" onclick="closeOverlay()">✕</button>
+      <div class="overlay-eyebrow">◇ Conquistas</div>
+      <h2 class="overlay-title">Certi<em>ficações</em></h2>
+      <div class="overlay-divider" style="background: var(--wine); opacity: 0.25;"></div>
+      <div class="certs-list">
+
+        <div class="cert-row">
+          <div class="cert-badge">
+            <span class="cert-badge-icon">✦</span>
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">CompTIA Security+</span>
+            <span class="cert-issuer">CompTIA · 2024</span>
+          </div>
+          <span class="cert-status cert-done">Obtida</span>
+        </div>
+
+        <div class="cert-row">
+          <div class="cert-badge">
+            <span class="cert-badge-icon">◈</span>
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">eJPT — eLearnSecurity</span>
+            <span class="cert-issuer">INE Security · 2024</span>
+          </div>
+          <span class="cert-status cert-done">Obtida</span>
+        </div>
+
+        <div class="cert-row">
+          <div class="cert-badge">
+            <span class="cert-badge-icon">◎</span>
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">Google Cybersecurity</span>
+            <span class="cert-issuer">Google · Coursera · 2026</span>
+          </div>
+          <span class="cert-status cert-done">Obtida</span>
+        </div>
+
+        <div class="cert-row cert-row-pending">
+          <div class="cert-badge cert-badge-pending">
+            <span class="cert-badge-icon">◇</span>
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">CEH — Certified Ethical Hacker</span>
+            <span class="cert-issuer">EC-Council · Em andamento</span>
+          </div>
+          <span class="cert-status cert-pending">Em breve</span>
+        </div>
+
+        <div class="cert-row cert-row-pending">
+          <div class="cert-badge cert-badge-pending">
+            <span class="cert-badge-icon">◇</span>
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">OSCP — Offensive Security</span>
+            <span class="cert-issuer">OffSec · Planejada</span>
+          </div>
+          <span class="cert-status cert-pending">Em breve</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
