@@ -2,7 +2,8 @@ const tabMap = {
   'tab-about':    'overlay-about',
   'tab-projects': 'overlay-projects',
   'tab-certs':    'overlay-certs',
-  'tab-socials':  'overlay-socials'
+  'tab-socials':  'overlay-socials',
+  'tab-experience': 'overlay-experience'
 };
 
 function closeOverlay() {
